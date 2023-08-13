@@ -36,7 +36,7 @@ export const handler: Handlers = {
 
     const kvMessage: KVMessage = {
       id: snowflake(),
-      name: user.name,
+      name: user.name ?? user.login,
       tag: user.id === 11367844 ? "ADMIN" : "NEW_USER",
       avatar: user.avatar_url,
       message: body,

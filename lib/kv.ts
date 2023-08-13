@@ -13,7 +13,7 @@ export const kv = await Deno.openKv();
 export interface GithubUser {
   id: number;
   login: string;
-  name: string;
+  name?: string;
   avatar_url: string;
 }
 
